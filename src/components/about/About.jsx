@@ -3,8 +3,8 @@ import React from "react";
 export default function About() {
   return (
     <div className="py-16 ">
-      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6 sm:mx-16 mx-2 sm:py-16 py-10">
+        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 sm:pb-20 mx-auto sm:px-6 lg:px-8">
           <div className="md:w-5/12 lg:w-1/2 flex justify-center">
             <img
               src="https://images.unsplash.com/photo-1584448098255-234156529929?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGlsbHVzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D"
