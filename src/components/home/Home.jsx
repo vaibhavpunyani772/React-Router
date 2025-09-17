@@ -38,7 +38,7 @@ export default function Home() {
       {/* Hero Image */}
       <div className="w-full sm:w-1/2 flex justify-center">
         <img
-          className="w-72 sm:w-full rounded-3xl object-cover shadow-lg"
+          className="w-72 sm:w-full rounded-3xl object-cover mt-20"
           src="https://gofloaters.com/work-from-anywhere-toolkit/assets/images/remote2.png"
           alt="image1"
         />
