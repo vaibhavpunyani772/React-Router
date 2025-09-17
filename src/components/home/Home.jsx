@@ -9,7 +9,7 @@ export default function Home() {
         <div className="z-10 max-w-screen-xl px-4 pb-10 sm:pb-20 mx-auto sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center sm:items-end sm:justify-between gap-8">
             {/* Text Content */}
-            <div className="space-y-6 text-center sm:text-left sm:max-w-lg">
+            <div className="space-y-6 text-center sm:text-left sm:max-w-lg sm:mt-40">
               <h2 className="text-3xl sm:text-5xl font-bold">
                 Download Now
                 <span className="block text-2xl sm:text-4xl text-gray-700">
