@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="mx-auto w-full max-w-7xl">
+    <div className="mx-auto w-full max-w-7xl ">
       {/* Hero Section */}
       <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16 py-10">
         <div className="z-10 max-w-screen-xl px-4 pb-10 sm:pb-20 mx-auto sm:px-6 lg:px-8">
@@ -13,12 +13,18 @@ export default function Home() {
               <h2 className="text-3xl sm:text-5xl font-bold">
                 Download Now
                 <span className="block text-2xl sm:text-4xl text-gray-700">
-                  Lorem Ipsum
+                  Productivity with a View
                 </span>
               </h2>
 
+              <p className="text-gray-600 text-lg sm:text-xl">
+                Work from anywhere, stay inspired everywhere. 
+                Our platform gives you the freedom to blend 
+                productivity with comfort — whether you’re at home, a café, or even the beach.
+              </p>
+
               <Link
-                className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-80 transition"
+                className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-80 transition "
                 to="/"
               >
                 <svg
@@ -38,10 +44,10 @@ export default function Home() {
             {/* Hero Image */}
             <div className="w-full sm:w-1/2 flex justify-center">
               <img
-                className="w-72 sm:w-full rounded-3xl object-cover shadow-lg"
+                className="w-72 sm:w-full rounded-3xl object-cover  mt-30"
                 src="https://gofloaters.com/work-from-anywhere-toolkit/assets/images/remote2.png"
                 alt="image1"
-              />
+              /> 
             </div>
           </div>
         </div>
@@ -50,16 +56,55 @@ export default function Home() {
       {/* Secondary Image */}
       <div className="grid place-items-center sm:mt-20 mt-10">
         <img
-          className="w-60 sm:w-96 rounded-3xl shadow-lg object-cover"
-          src="https://i0.wp.com/www.qandle.com/img/inner_page/hrmsads2.jpg?w=900&ssl=1"
+          className="w-50 sm:w-126 rounded-3xl shadow-lg object-cover"
+          src="https://img.freepik.com/premium-vector/man-work-from-home-freelancer-remote-worker-sitting-with-laptop-developer-programmer_1002658-4622.jpg?semt=ais_hybrid&w=740&q=80"
           alt="image2"
         />
       </div>
 
       {/* Heading */}
       <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">
-        Lorem Ipsum Yojo
+        Creative Workspace Inspiration
       </h1>
+
+      {/* Extra Content Section */}
+      <section className="sm:mx-16 mx-4 pb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="space-y-4">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+              Work Smarter, Not Harder
+            </h3>
+            <p className="text-gray-600 text-lg">
+              Discover the tools and resources designed to help you focus, 
+              collaborate, and achieve your goals. Whether you’re a freelancer, 
+              a student, or part of a remote team, we’ve got you covered.
+            </p>
+          </div>
+          <img
+            src="https://img.freepik.com/free-vector/remote-team-concept-illustration_114360-4760.jpg"
+            alt="Remote collaboration"
+            className="rounded-3xl shadow-lg object-cover"
+          />
+        </div>
+
+        {/* Second Extra Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-16 shadow-orange-600 ">
+          <img
+            src="https://img.freepik.com/free-vector/digital-nomad-working-beach_23-2148819921.jpg"
+            alt="Work from beach"
+            className="rounded-3xl shadow-lg object-cover"
+          />
+          <div className="space-y-4 ">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+              Freedom to Work Anywhere
+            </h3>
+            <p className="text-gray-600 text-lg">
+              Embrace the digital nomad lifestyle. Work while you travel, 
+              enjoy flexibility, and turn any spot into your productive corner.  
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
