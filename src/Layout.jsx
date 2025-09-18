@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="bg-orange-50">
+      <div className="bg-[#002e5f]">
         <Outlet />
       </div>
 

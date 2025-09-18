@@ -20,7 +20,7 @@ export default function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-orange-50 px-4">
+    <div className="flex justify-center items-center min-h-screen  px-4">
       <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Login
@@ -62,7 +62,7 @@ export default function Login() {
           <button
             type="submit"
             
-            className="w-full bg-orange-700 text-white py-2 rounded-lg font-medium hover:bg-orange-800 transition"
+            className="w-full bg-[#017acd] text-white py-2 rounded-lg font-medium hover:bg-black transition"
           >
             Log in
           </button>
@@ -71,7 +71,7 @@ export default function Login() {
         {/* Extra links */}
         <p className="mt-6 text-sm text-center text-gray-600">
           Don’t have an account?{" "}
-            <NavLink to={"/signup"} className="text-orange-700 hover:underline">
+            <NavLink to={"/signup"} className="text-[#002e5f] hover:underline">
             Sign in
           </NavLink>
         </p>

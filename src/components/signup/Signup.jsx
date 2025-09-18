@@ -29,8 +29,8 @@ export default function Signup() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-orange-50 px-4">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+    <div className="flex justify-center items-center min-h-screen  px-4">
+      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-8 mt-30 ">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">
           Create Account
         </h2>
@@ -47,7 +47,7 @@ export default function Signup() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#002e5f] focus:outline-none"
             />
           </div>
 
@@ -63,7 +63,7 @@ export default function Signup() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#002e5f] focus:outline-none"
             />
           </div>
 
@@ -79,7 +79,7 @@ export default function Signup() {
               value={formData.password}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#002e5f] focus:outline-none"
             />
           </div>
 
@@ -95,14 +95,14 @@ export default function Signup() {
               value={formData.confirmPassword}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-orange-500 focus:outline-none"
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[#002e5f] focus:outline-none"
             />
           </div>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-orange-700 text-white py-2 rounded-lg font-medium hover:bg-orange-800 transition"
+            className="w-full bg- bg-[#017acd] text-white py-2 rounded-lg font-medium hover:bg-[#002e5f] transition"
           >
             Sign Up
           </button>
@@ -111,7 +111,7 @@ export default function Signup() {
         {/* Extra links */}
         <p className="mt-6 text-sm text-center text-gray-600">
           Already have an account?{" "}
-          <NavLink to={"/login"} className="text-orange-700 hover:underline">
+          <NavLink to={"/login"} className="text-[#002e5f] hover:underline">
             Log in
           </NavLink>
         </p>

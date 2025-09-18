@@ -3,18 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-y">
+    <footer className="bg-[#017acd] text-white">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         {/* Top Section */}
         <div className="md:flex md:justify-between">
           {/* Logo */}
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <img
-                src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                className="mr-3 h-16"
-                alt="Logo"
-              />
+                <h1  className="h-10 bg-[#017acd] w-50 rounded-xl text-[#002e5f] text-3xl justify-center font-bold "><a href="https://react-router-neon.vercel.app/">React Router</a></h1>
             </Link>
           </div>
 
@@ -22,11 +18,9 @@ export default function Footer() {
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             {/* Resources */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Resources
-              </h2>
-              <ul className="text-gray-500 font-medium">
-                <li className="mb-4">
+              <h2 className="mb-6 text-sm font-semibold uppercase">Resources</h2>
+              <ul className="font-medium space-y-2">
+                <li>
                   <Link to="/" className="hover:underline">
                     Home
                   </Link>
@@ -41,11 +35,9 @@ export default function Footer() {
 
             {/* Follow Us */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Follow us
-              </h2>
-              <ul className="text-gray-500 font-medium">
-                <li className="mb-4">
+              <h2 className="mb-6 text-sm font-semibold uppercase">Follow us</h2>
+              <ul className="font-medium space-y-2">
+                <li>
                   <a
                     href="https://github.com/vaibhavpunyani772"
                     className="hover:underline"
@@ -70,11 +62,9 @@ export default function Footer() {
 
             {/* Legal */}
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
-                Legal
-              </h2>
-              <ul className="text-gray-500 font-medium">
-                <li className="mb-4">
+              <h2 className="mb-6 text-sm font-semibold uppercase">Legal</h2>
+              <ul className="font-medium space-y-2">
+                <li>
                   <a href="#" className="hover:underline">
                     Privacy Policy
                   </a>
@@ -90,11 +80,11 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-gray-300 opacity-40 sm:mx-auto lg:my-8" />
 
         {/* Bottom Section */}
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center">
+          <span className="text-sm sm:text-center">
             © 2025{" "}
             <a
               href="https://github.com/vaibhavpunyani772"
@@ -112,7 +102,7 @@ export default function Footer() {
             {/* Facebook */}
             <a
               href="https://facebook.com/"
-              className="text-gray-500 hover:text-gray-900"
+              className="hover:text-gray-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -135,7 +125,7 @@ export default function Footer() {
             {/* Discord */}
             <a
               href="https://discord.com/"
-              className="text-gray-500 hover:text-gray-900"
+              className="hover:text-gray-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -154,7 +144,7 @@ export default function Footer() {
             {/* Twitter */}
             <a
               href="https://twitter.com/"
-              className="text-gray-500 hover:text-gray-900"
+              className="hover:text-gray-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -179,7 +169,7 @@ export default function Footer() {
               href="https://github.com/vaibhavpunyani772"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-gray-900 transition"
+              className="hover:text-gray-200 transition"
             >
               <svg
                 className="w-4 h-4"

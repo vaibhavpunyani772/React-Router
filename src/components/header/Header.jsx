@@ -1,32 +1,31 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/logo.png";
+
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+    <header className=" bg-[#017acd] shadow-md fixed w-full top-0 left-0 z-50">
       <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <img
-            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-            alt="Logo"
-            className="h-8 w-auto"
-          />
+        <Link to="/" className="flex items-center ">
+                        <h1  className="h-10 bg-[#017acd] w-50 rounded-xl text-[#002e5f] text-3xl justify-center font-bold "><a href="https://react-router-neon.vercel.app/">React Router</a></h1>
         </Link>
 
         {/* Right section: Login + Get Started (desktop) */}
         <div className="flex items-center lg:order-2">
           <Link
             to="/login"
-            className="text-gray-700 hover:text-orange-700 px-3 py-2"
+            className="text-black hover:text-[#002e5f] px-3 py-2"
           >
             Log in
           </Link>
           <Link
             to="/get-started"
-            className="ml-2 px-4 py-2 text-white bg-orange-700 rounded-lg hover:opacity-80"
+            className="ml-2 px-4 py-2 text-white  bg-[#002e5f] rounded-lg hover:opacity-80"
           >
             Get started
           </Link>
@@ -76,7 +75,7 @@ export default function Header() {
             <li>
               <NavLink
                 to="/"
-                className="block py-2 px-3 text-gray-700 hover:text-orange-700"
+                className="block py-2 px-3 text-black hover:text-[#002e5f]"
               >
                 Home
               </NavLink>
@@ -84,7 +83,7 @@ export default function Header() {
             <li>
               <NavLink
                 to="/about"
-                className="block py-2 px-3 text-gray-700 hover:text-orange-700"
+                className="block py-2 px-3 text-black hover:text-[#002e5f]"
               >
                 About
               </NavLink>
@@ -92,7 +91,7 @@ export default function Header() {
             <li>
               <NavLink
                 to="/contact"
-                className="block py-2 px-3 text-gray-700 hover:text-orange-700"
+                className="block py-2 px-3 text-black hover:text-[#002e5f]"
               >
                 Contact Us
               </NavLink>
@@ -100,7 +99,7 @@ export default function Header() {
             <li>
               <NavLink
                 to="/github"
-                className="block py-2 px-3 text-gray-700 hover:text-orange-700"
+                className="block py-2 px-3 text-black hover:text-[#002e5f]"
               >
                 Github
               </NavLink>

@@ -93,7 +93,7 @@ export default function Contact() {
                   name="name"
                   id="name"
                   placeholder="Full Name"
-                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none"
+                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-[#002e5f] focus:ring-2 focus:ring-[#002e5f] outline-none"
                 />
               </div>
 
@@ -107,7 +107,7 @@ export default function Contact() {
                   name="email"
                   id="email"
                   placeholder="Email"
-                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none"
+                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-[#002e5f] focus:ring-2 focus:ring-[#002e5f] outline-none"
                 />
               </div>
 
@@ -121,14 +121,14 @@ export default function Contact() {
                   name="tel"
                   id="tel"
                   placeholder="Telephone Number"
-                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-orange-500 focus:ring-2 focus:ring-orange-500 outline-none"
+                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-[#002e5f] focus:ring-2 focus:ring-[#002e5f] outline-none"
                 />
               </div>
 
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full md:w-40 bg-orange-700 text-white font-bold py-3 px-6 rounded-lg mt-5 hover:bg-orange-600 transition duration-300 ease-in-out"
+                className="w-full md:w-40 bg-[#017acd] text-white font-bold py-3 px-6 rounded-lg mt-5 hover:bg-[#002e5f] transition duration-300 ease-in-out"
               >
                 Submit
               </button>
