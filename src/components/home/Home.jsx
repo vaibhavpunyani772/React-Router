@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="mx-auto w-full max-w-7xl">
       {/* Hero Section */}
-      <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16 py-10">
+      <aside className="relative overflow-hidden text-gray-300 rounded-lg sm:mx-16 mx-2 sm:py-16 py-10">
         <div className="z-10 max-w-screen-xl px-4 pb-10 sm:pb-20 mx-auto sm:px-6 lg:px-8">
           <div className="flex flex-col sm:flex-row items-center sm:items-center sm:justify-between gap-8">
             {/* Text Content */}

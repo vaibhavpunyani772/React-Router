@@ -47,15 +47,22 @@ return (
 export default Github;
 
 export const githubInfoLoader = async () => {
-  const userResponse = await fetch(
-    "https://api.github.com/users/vaibhavpunyani772"
-  );
-  const reposResponse = await fetch(
-    "https://api.github.com/users/vaibhavpunyani772/repos"
-  );
+  try {
+    const [userResponse, reposResponse] = await Promise.all([
+      fetch("https://api.github.com/users/vaibhavpunyani772"),
+      fetch("https://api.github.com/users/vaibhavpunyani772/repos"),
+    ]);
 
-  const user = await userResponse.json();
-  const repos = await reposResponse.json();
+    if (!userResponse.ok || !reposResponse.ok) {
+      throw new Error("GitHub API request failed");
+    }
 
-  return { user, repos };
+    const user = await userResponse.json();
+    const repos = await reposResponse.json();
+
+    return { user, repos };
+  } catch (error) {
+    console.error("Loader error:", error);
+    throw error; // let React Router show errorElement
+  }
 };

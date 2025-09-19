@@ -10,7 +10,6 @@ function Layout() {
       <div className="bg-[#002e5f]">
         <Outlet />
       </div>
-
       <Footer />
     </>
   );

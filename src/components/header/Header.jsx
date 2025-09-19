@@ -1,26 +1,33 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
 
-
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/contact", label: "Contact Us" },
+  { to: "/github", label: "Github" },
+];
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className=" bg-[#017acd] shadow-md fixed w-full top-0 left-0 z-50">
-      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4">
+      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4 text-white">
         {/* Logo */}
         <Link to="/" className="flex items-center ">
-                        <h1  className="h-10 bg-[#017acd] w-50 rounded-xl text-[#002e5f] text-3xl justify-center font-bold "><a href="https://react-router-neon.vercel.app/">React Router</a></h1>
+          <h1 className="h-10 bg-[#017acd] w-50 rounded-xl text-3xl justify-center font-bold ">
+            <a href="https://react-router-neon.vercel.app/">React Router</a>
+          </h1>
         </Link>
 
         {/* Right section: Login + Get Started (desktop) */}
         <div className="flex items-center lg:order-2">
-          <Link
-            to="/login"
-            className="text-black hover:text-[#002e5f] px-3 py-2"
-          >
+          <Link to="/login" className=" hover:text-[#002e5f] px-3 py-2">
             Log in
           </Link>
           <Link
@@ -37,11 +44,7 @@ export default function Header() {
           >
             {isOpen ? (
               // Close icon
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
                   d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -50,11 +53,7 @@ export default function Header() {
               </svg>
             ) : (
               // Hamburger icon
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   fillRule="evenodd"
                   d="M3 5h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2z"
@@ -72,38 +71,17 @@ export default function Header() {
           } w-full lg:flex lg:w-auto lg:order-1`}
         >
           <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-            <li>
-              <NavLink
-                to="/"
-                className="block py-2 px-3 text-black hover:text-[#002e5f]"
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className="block py-2 px-3 text-black hover:text-[#002e5f]"
-              >
-                About
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/contact"
-                className="block py-2 px-3 text-black hover:text-[#002e5f]"
-              >
-                Contact Us
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/github"
-                className="block py-2 px-3 text-black hover:text-[#002e5f]"
-              >
-                Github
-              </NavLink>
-            </li>
+            {navLinks.map((link) => (
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  className="block py-2 px-3 hover:text-[#002e5f]"
+                  onClick={handleClick}
+                >
+                  {link.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </nav>

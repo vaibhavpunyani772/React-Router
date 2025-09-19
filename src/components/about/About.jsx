@@ -13,7 +13,7 @@ export default function About() {
             />
           </div>
           <div className="md:w-7/12 lg:w-6/12">
-            <h2 className="text-2xl text-black font-bold md:text-4xl">
+            <h2 className="text-2xl text-gray-300 font-bold md:text-4xl">
               React development is carried out by passionate developers
             </h2>
             <p className="mt-6 text-white">

@@ -51,7 +51,13 @@ const router = createBrowserRouter(
       <Route path="login"  element={<Login/>}></Route>
       <Route path="signup"  element={<Signup/>}></Route>
       <Route path="user/:userid"  element={<User/>}></Route>
-      <Route loader={githubInfoLoader} path="github"  element={<Github/>}></Route>
+      <Route
+  loader={githubInfoLoader}
+  path="github"
+  element={<Github />}
+  errorElement={<p className="text-red-600">Failed to load GitHub data. Please try again later.</p>}
+/>
+
     </Route>
   )
 )

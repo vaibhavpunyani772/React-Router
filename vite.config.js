@@ -5,4 +5,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+   server: {
+    historyApiFallback: true, // ensures SPA fallback in dev
+  },
 })
