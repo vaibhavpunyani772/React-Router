@@ -37,8 +37,8 @@ export default function About() {
         </div>
 
         {/* New Content Section */}
-        <div className="mt-20 grid md:grid-cols-3 gap-10 ml-24">
-          <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 ">
+          <div className="bg-white rounded-2xl shadow-lg p-6 text-center w-full">
             <img
               src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&auto=format&fit=crop&q=60"
               alt="Innovation"

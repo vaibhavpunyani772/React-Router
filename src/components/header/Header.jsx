@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { IoMenu } from "react-icons/io5";
+import { CgClose } from "react-icons/cg";
+import { FaHamburger } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 
 const navLinks = [
@@ -17,22 +20,22 @@ export default function Header() {
 
   return (
     <header className=" bg-[#017acd] shadow-md fixed w-full top-0 left-0 z-50">
-      <nav className="max-w-7xl mx-auto flex flex-wrap items-center justify-between p-4 text-white">
+      <nav className="max-w-7xl mx-auto flex   items-center  justify-between p-4 text-white ">
         {/* Logo */}
         <Link to="/" className="flex items-center ">
-          <h1 className="h-10 bg-[#017acd] w-50 rounded-xl text-3xl justify-center font-bold ">
-            <a href="https://react-router-neon.vercel.app/">React Router</a>
+          <h1 className="h-10 flex items-center justify-center rounded-xl whitespace-nowrap font-bold text-xl sm:text-2xl ">
+           React Router
           </h1>
         </Link>
 
         {/* Right section: Login + Get Started (desktop) */}
         <div className="flex items-center lg:order-2">
-          <Link to="/login" className=" hover:text-[#002e5f] px-3 py-2">
+          <Link to="/login" className="flex items-center justify-center hover:text-[#002e5f] whitespace-nowrap px-3 py-2 text-sm sm:text-base">
             Log in
           </Link>
           <Link
             to="/get-started"
-            className="ml-2 px-4 py-2 text-white  bg-[#002e5f] rounded-lg hover:opacity-80"
+            className="ml-2 px-4 py-2 text-white whitespace-nowrap  bg-[#002e5f] rounded-lg hover:opacity-80 text-sm sm:text-base"
           >
             Get started
           </Link>
@@ -44,46 +47,52 @@ export default function Header() {
           >
             {isOpen ? (
               // Close icon
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
+              <CgClose  className="text-lg text-white"/>
             ) : (
               // Hamburger icon
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M3 5h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2zm0 6h14a1 1 0 110 2H3a1 1 0 110-2z"
-                  clipRule="evenodd"
-                />
-              </svg>
+             <IoMenu  className="text-lg text-white"/>
             )}
           </button>
         </div>
 
         {/* Nav links */}
-        <div
-          className={`${
-            isOpen ? "block" : "hidden"
-          } w-full lg:flex lg:w-auto lg:order-1`}
+        {/* Nav links (Mobile slide-down) */}
+<div
+  className={`absolute top-full left-0 w-full bg-[#017acd] transition-all duration-300 ease-in-out lg:hidden ${
+    isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
+  }`}
+>
+  <ul className="flex flex-col font-medium p-4 space-y-2">
+    {navLinks.map((link) => (
+      <li key={link.to}>
+        <NavLink
+          to={link.to}
+          className="block py-2 px-3 hover:text-[#002e5f]"
+          onClick={handleClick}
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-            {navLinks.map((link) => (
-              <li key={link.to}>
-                <NavLink
-                  to={link.to}
-                  className="block py-2 px-3 hover:text-[#002e5f]"
-                  onClick={handleClick}
-                >
-                  {link.label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
-        </div>
+          {link.label}
+        </NavLink>
+      </li>
+    ))}
+  </ul>
+</div>
+
+{/* Desktop menu (always visible) */}
+<div className="hidden lg:flex lg:order-1">
+  <ul className="flex flex-row font-medium lg:space-x-8">
+    {navLinks.map((link) => (
+      <li key={link.to}>
+        <NavLink
+          to={link.to}
+          className="block py-2 px-3 hover:text-[#002e5f]"
+        >
+          {link.label}
+        </NavLink>
+      </li>
+    ))}
+  </ul>
+</div>
+
       </nav>
     </header>
   );
