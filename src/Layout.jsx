@@ -8,9 +8,10 @@ function Layout() {
     <>
       <Header />
       <div
-       style={{
-    background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
-  }}>
+     style={{
+        background: "radial-gradient(circle at top left, #001a33, #000d1a)",
+        color: "#3b82f6", // Tailwind blue-500
+      }}>
         <Outlet />
       </div>
       <Footer />

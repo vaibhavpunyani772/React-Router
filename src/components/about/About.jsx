@@ -2,82 +2,119 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="py-16 w-full lg:w-[90%]">
-      <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6 sm:mx-10 sm:py-10 py-20">
-        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
-          <div className="md:w-5/12 lg:w-1/2 flex justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1508780709619-79562169bc64?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0"
-              alt="image"
-              className="w-md rounded-3xl shadow-sm shadow-amber-200"
-            />
+    <div
+      className="min-h-screen px-6 flex flex-col items-center justify-start py-16 mt-15"
+      style={{
+        background: "radial-gradient(circle at top left, #001a33, #000d1a)",
+      }}
+    >
+      {/* Intro Section */}
+      <h2
+        className="text-2xl text-[#2563eb] font-bold md:text-4xl text-center"
+        style={{ textShadow: "0 0 15px #2563eb" }}
+      >
+        React development is carried out by passionate developers
+      </h2>
+      <p className="mt-6 max-w-2xl text-white text-center text-lg">
+        We build modern, responsive, and dynamic applications using React.
+        Innovation and creativity are at the core of everything we do. Our goal
+        is to deliver seamless user experiences that empower businesses and
+        individuals alike.
+      </p>
+
+      {/* Team Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-16 max-w-6xl">
+        <img
+          src="https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8193.jpg"
+          alt="Developers working"
+          className="rounded-2xl shadow-lg object-cover"
+        />
+        <div className="space-y-4">
+          <h3
+            className="text-2xl sm:text-3xl font-semibold "
+            style={{ textShadow: "0 0 15px #2563eb" }}
+          >
+            A Team of Creative Minds
+          </h3>
+          <p className="text-white text-lg">
+            Our developers are not just coders, they are innovators. We believe
+            in writing clean, scalable, and maintainable code. Every line of
+            code we write is driven by a vision of excellence and long-term
+            impact.
+          </p>
+        </div>
+      </div>
+
+      {/* Mission Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-20 max-w-6xl">
+        <div className="space-y-4">
+          <h3
+            className="text-2xl sm:text-3xl font-bold"
+            style={{ textShadow: "0 0 15px #2563eb" }}
+          >
+            Our Mission
+          </h3>
+          <p className="text-white text-lg">
+            We aim to transform ideas into reality by building applications that
+            are not only functional but also visually stunning. From startups to
+            enterprises, our mission is to deliver digital solutions that scale.
+          </p>
+        </div>
+        <img
+          src="https://img.freepik.com/free-vector/website-creator-concept-illustration_114360-2770.jpg"
+          alt="Mission"
+          className="rounded-2xl shadow-lg object-cover"
+        />
+      </div>
+
+      {/* Values Section */}
+      <div className="mt-20 text-center max-w-4xl">
+        <h3
+          className="text-2xl sm:text-4xl font-semibold "
+          style={{ textShadow: "0 0 15px #2563eb" }}
+        >
+          Our Core Values
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-10">
+          <div className="p-6 bg-white/10 rounded-xl shadow-lg border border-blue-500/30">
+            <h4 className="font-bold text-xl mb-2 text-blue-300">🚀 Innovation</h4>
+            <p className="text-white">
+              We embrace new technologies to stay ahead of the curve and deliver
+              cutting-edge solutions.
+            </p>
           </div>
-          <div className="md:w-7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#9333ea] font-bold md:text-4xl"
-             style={{ textShadow: "0 0 15px #9333ea" }}>
-              React development is carried out by passionate developers
-            </h2>
-            <p className="mt-6 text-white">
-              At <span className="font-semibold">[Your Company Name]</span>, we believe in creating solutions that make
-              life simpler, smarter, and more connected. Our team is driven by
-              innovation, guided by integrity, and committed to delivering
-              exceptional value to our customers.
+          <div className="p-6 bg-white/10 rounded-xl shadow-lg border border-blue-500/30">
+            <h4 className="font-bold text-xl mb-2 text-blue-300">🤝 Collaboration</h4>
+            <p className="text-white">
+              Our team works closely with clients to understand their needs and
+              provide tailored solutions.
             </p>
-            <p className="mt-4 text-white">
-              From day one, our mission has been to combine creativity with technology
-              to build products and services that truly make a difference. We’re
-              passionate about growth—not just for our business, but for the communities
-              and people we serve.
-            </p>
-            <p className="mt-4 text-white">
-              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-              expedita at? Asperiores nemo possimus nesciunt dicta veniam
-              aspernatur quam mollitia.
+          </div>
+          <div className="p-6 bg-white/10 rounded-xl shadow-lg border border-blue-500/30">
+            <h4 className="font-bold text-xl mb-2 text-blue-300">💡 Creativity</h4>
+            <p className="text-white">
+              We think outside the box to craft designs and experiences that
+              truly stand out.
             </p>
           </div>
         </div>
+      </div>
 
-        {/* New Content Section */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 ">
-          <div className="bg-white rounded-2xl shadow-lg p-6 text-center w-full">
-            <img
-              src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&auto=format&fit=crop&q=60"
-              alt="Innovation"
-              className="w-full h-56 object-cover rounded-xl mb-6"
-            />
-            <h3 className="text-xl font-bold text-gray-900">Innovation</h3>
-            <p className="mt-4 text-gray-600">
-              We thrive on pushing boundaries, exploring new technologies, and
-              creating forward-thinking solutions for tomorrow.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&auto=format&fit=crop&q=60"
-              alt="Teamwork"
-              className="w-full h-56 object-cover rounded-xl mb-6"
-            />
-            <h3 className="text-xl font-bold text-gray-900">Teamwork</h3>
-            <p className="mt-4 text-gray-600">
-              Collaboration is at the heart of everything we do, ensuring every
-              voice is heard and every idea matters.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-2xl shadow-lg p-6 text-center">
-            <img
-              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&auto=format&fit=crop&q=60"
-              alt="Impact"
-              className="w-full h-56 object-cover rounded-xl mb-6"
-            />
-            <h3 className="text-xl font-bold text-gray-900">Impact</h3>
-            <p className="mt-4 text-gray-600">
-              Our goal is to leave a lasting impact, not only in technology but
-              in the lives of people and communities worldwide.
-            </p>
-          </div>
-        </div>
+      {/* Call to Action */}
+      <div className="mt-20 text-center">
+        <h3
+          className="text-3xl sm:text-4xl font-bold "
+          style={{ textShadow: "0 0 15px #2563eb" }}
+        >
+          Want to Build Something Amazing Together?
+        </h3>
+        <p className="text-white mt-4 text-lg">
+          Let’s collaborate and turn your ideas into a powerful digital
+          experience with React.
+        </p>
+        <button className="mt-6 bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-800 transition shadow-lg">
+         <a href="/contact"> Contact Us</a>
+        </button>
       </div>
     </div>
   );

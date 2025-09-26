@@ -3,146 +3,51 @@ import React from "react";
 export default function Contact() {
   return (
     <div
-      className="relative flex items-top justify-center min-h-screen sm:pt-0 px-4"
+      className="relative flex items-top justify-center min-h-screen sm:pt-0 px-4 "
       style={{
-        background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
+        background: "radial-gradient(circle at top left, #001a33, #000d1a)",
       }}
     >
-      <div className="max-w-6xl mx-auto w-full sm:px-6 lg:px-8 py-10">
-        <div className="mt-20 text-center overflow-hidden shadow-md rounded-xl max-sm:mt-25 "
+      <div
+        className="mt-30 text-center overflow-hidden shadow-md rounded-xl max-sm:mt-25 mb-20"
         style={{
-        background: "radial-gradient(circle at top left, #5f0ba4,#4d009a)",
-      }}>
-          <div className="grid grid-cols-1 md:grid-cols-2 ">
-            {/* Left Section */}
-            <div className="p-6 md:p-15">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight"
-                style={{ textShadow: "0 0 15px #9333ea" }}>
-                Get in touch:
-              </h1>
-              <p className="text-base sm:text-lg md:text-xl font-medium text-white mt-2">
-                Fill in the form to start a conversation
-              </p>
-
-              {/* Address */}
-              <div className="flex items-center mt-6 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 md:w-8 md:h-8 text-white"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
-                <div className="ml-3 md:ml-4 text-sm sm:text-md md:text-lg font-semibold">
-                  Acme Inc, Street, State, Postal Code
-                </div>
-              </div>
-
-              {/* Phone */}
-              <div className="flex items-center mt-4 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 md:w-8 md:h-8 text-white"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"
-                  />
-                </svg>
-                <div className="ml-3 md:ml-4 text-sm sm:text-md md:text-lg font-semibold">
-                  +44 1234567890
-                </div>
-              </div>
-
-              {/* Email */}
-              <div className="flex items-center mt-4 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  viewBox="0 0 24 24"
-                  className="w-6 h-6 md:w-8 md:h-8 text-white"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-                <div className="ml-3 md:ml-4 text-sm sm:text-md md:text-lg font-semibold">
-                  info@acme.org
-                </div>
-              </div>
-            </div>
-
-            {/* Right Section (Form) */}
-            <form className="p-6 md:p-10 flex flex-col justify-center">
-              {/* Name */}
-              <div className="flex flex-col">
-                <label htmlFor="name" className="hidden">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Full Name"
-                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-[#002e5f] focus:ring-2 focus:ring-[#002e5f] outline-none"
-                />
-              </div>
-
-              {/* Email */}
-              <div className="flex flex-col mt-3">
-                <label htmlFor="email" className="hidden">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-[#002e5f] focus:ring-2 focus:ring-[#002e5f] outline-none"
-                />
-              </div>
-
-              {/* Phone */}
-              <div className="flex flex-col mt-3">
-                <label htmlFor="tel" className="hidden">
-                  Number
-                </label>
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  placeholder="Telephone Number"
-                  className="mt-2 py-3 px-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-800 focus:border-[#002e5f] focus:ring-2 focus:ring-[#002e5f] outline-none"
-                />
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                className="w-full md:w-40 bg-[#1a0033] text-white font-bold py-3 px-6 rounded-lg mt-5 hover:bg-[#000000] transition duration-300 ease-in-out"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+          background: "radial-gradient(circle at top left, #0a3d91,#002e5f)",
+        }}
+      >
+        <h1
+          className="text-3xl sm:text-5xl font-bold text-blue-400 p-6"
+          style={{ textShadow: "0 0 15px #2563eb" }}
+        >
+          Contact Us
+        </h1>
+        <div className="p-8 text-white">
+          <p className="mb-4">
+            Have questions? We’d love to hear from you. Fill out the form below
+            to get in touch.
+          </p>
+          <form className="space-y-4 max-w-lg mx-auto">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full px-4 py-2 rounded-lg bg-white/10 text-white focus:outline-none border border-blue-500/30"
+            />
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full px-4 py-2 rounded-lg bg-white/10 text-white focus:outline-none border border-blue-500/30"
+            />
+            <textarea
+              placeholder="Your Message"
+              rows="4"
+              className="w-full px-4 py-2 rounded-lg bg-white/10 text-white focus:outline-none border border-blue-500/30"
+            ></textarea>
+            <button
+              type="submit"
+              className="bg-blue-600 hover:bg-blue-800 text-white px-6 py-2 rounded-lg shadow-lg"
+            >
+              <a href="/">Send Message</a>
+            </button>
+          </form>
         </div>
       </div>
     </div>

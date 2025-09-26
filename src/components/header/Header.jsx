@@ -21,26 +21,25 @@ export default function Header() {
     <header
       className="shadow-md fixed w-full top-0 left-0 z-50"
       style={{
-        background: "radial-gradient(circle at top left, #7300ba, #8c11f0)",
-        color: "#210234",
+        background: "radial-gradient(circle at top left, #003366, #001a33)",
+        color: "#dbeafe",
       }}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <Link to="/" className="flex items-center">
- <h1
-  className="h-10 flex items-center justify-center rounded-xl whitespace-nowrap font-bold text-xl sm:text-3xl text-[#3a006c]"
-  style={{
-    textShadow: `
-      0 0 3px #9e22ce,
-      0 0 6px #6b21a8,
-      0 0 10px #5b1893
-    `,
-  }}
->
-  React Router
-</h1>
-
+          <h1
+            className="h-10 flex items-center justify-center rounded-xl whitespace-nowrap font-bold text-xl sm:text-3xl text-[#bfdbfe]"
+            style={{
+              textShadow: `
+                0 0 5px #3b82f6,
+                0 0 10px #2563eb,
+                0 0 20px #1e40af
+              `,
+            }}
+          >
+            React Router
+          </h1>
         </Link>
 
         {/* Right section */}
@@ -53,7 +52,7 @@ export default function Header() {
           </Link>
           <Link
             to="/get-started"
-            className="ml-2 px-4 py-2 whitespace-nowrap bg-[#4a008f] rounded-lg hover:opacity-80  text-sm sm:text-base text-white"
+            className="ml-2 px-4 py-2 whitespace-nowrap bg-blue-800 rounded-lg hover:opacity-80 text-sm sm:text-base text-white"
           >
             Get started
           </Link>
@@ -77,8 +76,8 @@ export default function Header() {
             isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0 overflow-hidden"
           }`}
           style={{
-            background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
-            color: "#a855f7",
+            background: "radial-gradient(circle at top left, #0d1b2a, #000814)",
+            color: "#60a5fa",
           }}
         >
           <ul className="flex flex-col font-medium p-4 space-y-2">
@@ -101,7 +100,10 @@ export default function Header() {
           <ul className="flex flex-row font-medium lg:space-x-8">
             {navLinks.map((link) => (
               <li key={link.to}>
-                <NavLink to={link.to} className="block py-2 px-3 hover:underline">
+                <NavLink
+                  to={link.to}
+                  className="block py-2 px-3 hover:underline"
+                >
                   {link.label}
                 </NavLink>
               </li>

@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "radial-gradient(circle at top left, #7300ba, #8c11f0)",
-        color: "#210234",
+        background: "radial-gradient(circle at top left, #003366, #001a33)",
+        color: "#dbeafe",
       }}
     >
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -16,14 +16,14 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <h1
-               className="h-10 flex items-center justify-center rounded-xl whitespace-nowrap font-bold text-2xl sm:text-4xl text-[#3a006c]"
-  style={{
-    textShadow: `
-      0 0 3px #9e22ce,
-      0 0 6px #6b21a8,
-      0 0 10px #5b1893
-    `
-  }}
+                className="h-10 flex items-center justify-center rounded-xl whitespace-nowrap font-bold text-2xl sm:text-4xl text-[#bfdbfe]"
+                style={{
+                  textShadow: `
+                    0 0 5px #3b82f6,
+                    0 0 10px #2563eb,
+                    0 0 20px #1e40af
+                  `,
+                }}
               >
                 React Router
               </h1>
@@ -35,7 +35,7 @@ export default function Footer() {
             <div>
               <h2
                 className="mb-6 text-sm font-semibold uppercase"
-                style={{ textShadow: "0 0 15px #9333ea" }}
+                style={{ textShadow: "0 0 12px #2563eb" }}
               >
                 Resources
               </h2>
@@ -56,7 +56,7 @@ export default function Footer() {
             <div>
               <h2
                 className="mb-6 text-sm font-semibold uppercase"
-                style={{ textShadow: "0 0 15px #9333ea" }}
+                style={{ textShadow: "0 0 12px #2563eb" }}
               >
                 Follow us
               </h2>
@@ -87,7 +87,7 @@ export default function Footer() {
             <div>
               <h2
                 className="mb-6 text-sm font-semibold uppercase"
-                style={{ textShadow: "0 0 15px #9333ea" }}
+                style={{ textShadow: "0 0 12px #2563eb" }}
               >
                 Legal
               </h2>
@@ -108,7 +108,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <hr className="my-6 border-gray-500 opacity-30 sm:mx-auto lg:my-8" />
+        <hr className="my-6 border-blue-400 opacity-30 sm:mx-auto lg:my-8" />
 
         {/* Bottom Section */}
         <div className="sm:flex sm:items-center sm:justify-between">
