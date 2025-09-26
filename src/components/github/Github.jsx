@@ -5,8 +5,12 @@ function Github() {
   const { user, repos } = useLoaderData();
 return (
     <div className="p-5 max-sm:mt-25 mt-18  ">
-    <div className="max-w-lg mx-auto  bg-white rounded-2xl shadow-lg p-10 text-center  ">
-      <h2 className="text-xl font-bold text-gray-800 mb-4">
+    <div className="max-w-lg mx-auto  bg-white rounded-2xl shadow-lg p-10 text-center  "
+     style={{
+        background: "radial-gradient(circle at top left, #7300ba, #8c11f0)",
+        color: "#210234",
+      }}>
+      <h2 className="text-xl font-bold text-purple-1000 mb-4">
         GitHub Followers: <span className="text-blue-600">{user.followers}</span>
       </h2>
 
@@ -17,15 +21,21 @@ return (
         className="rounded-full mx-auto border-4 border-gray-900 shadow-md"
       />
 
-      <h3 className="text-lg font-semibold text-gray-700 mt-6 mb-2">
+      <h3 className="text-lg font-semibold text-purple-1000 mt-6 mb-2">
         Repositories
       </h3>
 
-      <ul className="space-y-2">
+      <ul className="space-y-2"
+       >
         {repos.map((repo) => (
           <li
             key={repo.id}
             className="flex items-center justify-between bg-gray-50 hover:bg-gray-100 p-3 rounded-lg shadow-sm transition"
+            style={{
+        background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
+        color: "#a855f7",
+        textShadow: "0 0 15px #9333ea"
+      }}
           >
             <a
               href={repo.html_url}

@@ -2,27 +2,36 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="relative flex items-top justify-center min-h-screen sm:pt-0 px-4 ">
+    <div
+      className="relative flex items-top justify-center min-h-screen sm:pt-0 px-4"
+      style={{
+        background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
+      }}
+    >
       <div className="max-w-6xl mx-auto w-full sm:px-6 lg:px-8 py-10">
-        <div className="mt-20 text-center overflow-hidden bg-white shadow-md rounded-xl max-sm:mt-25 ">
+        <div className="mt-20 text-center overflow-hidden shadow-md rounded-xl max-sm:mt-25 "
+        style={{
+        background: "radial-gradient(circle at top left, #5f0ba4,#4d009a)",
+      }}>
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             {/* Left Section */}
             <div className="p-6 md:p-15">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl text-gray-800 font-extrabold tracking-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight"
+                style={{ textShadow: "0 0 15px #9333ea" }}>
                 Get in touch:
               </h1>
-              <p className="text-base sm:text-lg md:text-xl font-medium text-gray-600 mt-2">
+              <p className="text-base sm:text-lg md:text-xl font-medium text-white mt-2">
                 Fill in the form to start a conversation
               </p>
 
               {/* Address */}
-              <div className="flex items-center mt-6 text-gray-600">
+              <div className="flex items-center mt-6 text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-6 h-6 md:w-8 md:h-8 text-gray-500"
+                  className="w-6 h-6 md:w-8 md:h-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -41,13 +50,13 @@ export default function Contact() {
               </div>
 
               {/* Phone */}
-              <div className="flex items-center mt-4 text-gray-600">
+              <div className="flex items-center mt-4 text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-6 h-6 md:w-8 md:h-8 text-gray-500"
+                  className="w-6 h-6 md:w-8 md:h-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -61,13 +70,13 @@ export default function Contact() {
               </div>
 
               {/* Email */}
-              <div className="flex items-center mt-4 text-gray-600">
+              <div className="flex items-center mt-4 text-white">
                 <svg
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
                   viewBox="0 0 24 24"
-                  className="w-6 h-6 md:w-8 md:h-8 text-gray-500"
+                  className="w-6 h-6 md:w-8 md:h-8 text-white"
                 >
                   <path
                     strokeLinecap="round"
@@ -128,7 +137,7 @@ export default function Contact() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full md:w-40 bg-[#017acd] text-white font-bold py-3 px-6 rounded-lg mt-5 hover:bg-[#002e5f] transition duration-300 ease-in-out"
+                className="w-full md:w-40 bg-[#1a0033] text-white font-bold py-3 px-6 rounded-lg mt-5 hover:bg-[#000000] transition duration-300 ease-in-out"
               >
                 Submit
               </button>

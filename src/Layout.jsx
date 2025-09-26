@@ -7,7 +7,10 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="bg-[#002e5f]">
+      <div
+       style={{
+    background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
+  }}>
         <Outlet />
       </div>
       <Footer />
