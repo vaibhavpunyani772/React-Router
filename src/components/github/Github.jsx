@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 function Github() {
   const { user, repos } = useLoaderData();
 return (
-    <div className="p-5 max-sm:mt-25 mt-8  ">
+    <div className="p-5 max-sm:mt-12 mt-18  ">
     <div className="max-w-lg mx-auto  bg-white rounded-2xl shadow-lg p-10 text-center  "
      style={{
         background: "radial-gradient(circle at top left, #7300ba, #8c11f0)",
