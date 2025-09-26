@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div
-      className="mx-auto w-full max-w-7xl"
+      className="mx-auto w-full max-w-7xl mt-10 sm:mt-20"
       style={{
         background: "radial-gradient(circle at top left, #1a0033, #0d001a)",
         color: "#a855f7",
